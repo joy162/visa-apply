@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Application Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Visa Application Portal</h1>
+        <p>Apply for your visa online. Fast, secure, and easy.</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome</h2>
+            <p>Please fill out the form below to start your visa application. Ensure all details are accurate.</p>
+        </section>
+
+        <form action="#" method="post" class="visa-form">
+            <h2>Application Form</h2>
+
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="passport-number">Passport Number:</label>
+            <input type="text" id="passport-number" name="passport-number" required>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <label for="visa-type">Visa Type:</label>
+            <select id="visa-type" name="visa-type" required>
+                <option value="">Select Type</option>
+                <option value="tourist">Tourist</option>
+                <option value="business">Business</option>
+                <option value="student">Student</option>
+                <option value="work">Work</option>
+            </select>
+
+            <label for="purpose">Purpose of Visit:</label>
+            <textarea id="purpose" name="purpose" rows="4" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Visa Portal. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

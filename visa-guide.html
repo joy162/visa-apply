@@ -1,0 +1,315 @@
+<!-- Updated visa-guide.html with animations -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Application Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f7fa;
+            color: #333;
+            animation: fadeInBody 1s ease-out;
+        }
+
+        @keyframes fadeInBody {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1,
+        h2 {
+            color: #007bff;
+        }
+
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease-out;
+            animation-fill-mode: both;
+        }
+
+        .section:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .section:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .section:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .section:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        .section:nth-child(5) {
+            animation-delay: 1s;
+        }
+
+        .section:nth-child(6) {
+            animation-delay: 1.2s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        .apply-button {
+            background-color: #dc3545;
+            margin-top: 20px;
+        }
+
+        .apply-button:hover {
+            background-color: #c82333;
+            transform: scale(1.05);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Visa Application Guide</h1>
+        <p>Welcome to the Visa Application Hub! This page provides comprehensive information on how to apply for various
+            types of visas, including travel, work, student, and more. Whether you're planning a vacation, pursuing
+            education, or seeking employment abroad, we've got you covered with step-by-step guides, requirements, and
+            tips. Please note that visa processes vary by country, so always check the official embassy or consulate
+            website for the most up-to-date information.</p>
+        <button class="apply-button" onclick="window.location.href='apply.html'">Apply for Visa Now</button>
+    </header>
+
+    <h2>Quick Navigation</h2>
+    <ul>
+        <li><a href="#types">Types of Visas</a></li>
+        <li><a href="#steps">General Application Steps</a></li>
+        <li><a href="#documents">Required Documents</a></li>
+        <li><a href="#mistakes">Common Mistakes to Avoid</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div id="types" class="section">
+        <h2>Types of Visas</h2>
+        <p>Visas are categorized based on purpose and duration. Here are the most common types:</p>
+        <ul>
+            <li><strong>Tourist/Visitor Visa</strong>: For short trips, vacations, or visiting family/friends. Typically
+                valid for 30-90 days.</li>
+            <li><strong>Business Visa</strong>: For meetings, conferences, or short-term work-related activities.</li>
+            <li><strong>Student Visa</strong>: For pursuing education abroad. Requires acceptance from an educational
+                institution.</li>
+            <li><strong>Work Visa</strong>: For employment opportunities. Often requires a job offer and sponsorship.
+            </li>
+            <li><strong>Immigrant Visa</strong>: For permanent relocation, such as family reunification or investment.
+            </li>
+            <li><strong>Transit Visa</strong>: For layovers or short stops en route to another destination.</li>
+        </ul>
+        <p>Select your destination country to view specific requirements. Popular destinations include the USA, UK,
+            Canada, Australia, and Schengen countries in Europe.</p>
+    </div>
+
+    <div id="steps" class="section">
+        <h2>General Application Steps</h2>
+        <p>Applying for a visa involves several key steps. Follow this guide to ensure a smooth process:</p>
+        <ol>
+            <li><strong>Determine Your Visa Type</strong>: Based on your purpose of travel (e.g., tourism, work).</li>
+            <li><strong>Check Eligibility</strong>: Review the specific requirements for your nationality and
+                destination. Use tools like visa calculators on official sites.</li>
+            <li><strong>Gather Documents</strong>: Collect all necessary paperwork (see below).</li>
+            <li><strong>Fill Out the Application Form</strong>: Complete the online or paper form accurately. Pay
+                attention to details.</li>
+            <li><strong>Schedule an Appointment</strong>: Many visas require an in-person interview at an embassy or
+                consulate.</li>
+            <li><strong>Submit and Pay Fees</strong>: Submit your application and pay the visa fee (varies by country,
+                e.g., US tourist visa is around $160-265 USD).</li>
+            <li><strong>Attend Interview (if required)</strong>: Prepare for questions about your trip, finances, and
+                ties to your home country.</li>
+            <li><strong>Wait for Processing</strong>: Processing times range from days to months. Track your application
+                status online.</li>
+            <li><strong>Collect Your Visa</strong>: Once approved, pick up your passport with the visa stamp.</li>
+        </ol>
+        <p>Pro Tip: Start your application 3-6 months in advance to avoid rush fees or delays.</p>
+    </div>
+
+    <div id="documents" class="section">
+        <h2>Required Documents</h2>
+        <p>Common documents needed for most visa applications include:</p>
+        <ul>
+            <li><strong>Valid Passport</strong>: With at least 6 months validity beyond your planned stay.</li>
+            <li><strong>Application Form</strong>: Completed and signed.</li>
+            <li><strong>Photos</strong>: Recent passport-sized photos (usually 2-4).</li>
+            <li><strong>Proof of Purpose</strong>: Flight itinerary, hotel booking, invitation letter, or job offer.
+            </li>
+            <li><strong>Financial Proof</strong>: Bank statements, salary slips, or sponsorship letters showing you can
+                support yourself.</li>
+            <li><strong>Accommodation Proof</strong>: Hotel reservation or host declaration.</li>
+            <li><strong>Health Insurance</strong>: Coverage for medical emergencies.</li>
+            <li><strong>Additional for Specific Visas</strong>: Medical certificates, police clearance, or educational
+                transcripts.</li>
+        </ul>
+        <p>Always verify country-specific requirements, as they can differ (e.g., Schengen visas require travel
+            insurance).</p>
+    </div>
+
+    <div id="mistakes" class="section">
+        <h2>Common Mistakes to Avoid</h2>
+        <ul>
+            <li><strong>Incomplete Applications</strong>: Double-check all fields and attachments.</li>
+            <li><strong>Insufficient Funds</strong>: Ensure you demonstrate financial stability.</li>
+            <li><strong>Late Submissions</strong>: Apply early to beat peak seasons.</li>
+            <li><strong>False Information</strong>: Honesty is key; discrepancies can lead to bans.</li>
+            <li><strong>Ignoring Biometrics</strong>: Some visas require fingerprinting or photos.</li>
+        </ul>
+    </div>
+
+    <div id="faqs" class="section">
+        <h2>FAQs</h2>
+        <div class="faq-item">
+            <p><strong>Q: How long does visa processing take?</strong><br>A: It varies; tourist visas often take 1-4
+                weeks, while student visas may take 2-3 months.</p>
+        </div>
+        <div class="faq-item">
+            <p><strong>Q: Can I apply online?</strong><br>A: Yes, many countries offer e-visas or online applications
+                (e.g., US ESTA, UK visa).</p>
+        </div>
+        <div class="faq-item">
+            <p><strong>Q: What if my visa is denied?</strong><br>A: You can reapply with corrected information or appeal
+                the decision.</p>
+        </div>
+        <div class="faq-item">
+            <p><strong>Q: Do I need a visa for every country?</strong><br>A: No; some offer visa-free entry for short
+                stays (e.g., US citizens in many European countries).</p>
+        </div>
+        <p>For more details, visit official government websites like <a href="https://www.uscis.gov">USCIS</a>, <a
+                href="https://www.gov.uk/apply-to-come-to-the-uk">UK Gov</a>, or <a
+                href="https://www.canada.ca/en/immigration-refugees-citizenship.html">Canada IRCC</a>.</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to our support team at <a
+                href="mailto:support@visaapplicationhub.com">support@visaapplicationhub.com</a> or call
+            +1-800-VISA-HELP. We're here to assist with personalized advice.</p>
+        <button onclick="toggleDisclaimer()">Show Disclaimer</button>
+        <div id="disclaimer" class="hidden">
+            <p><em>Disclaimer: This is a general guide. Visa rules change frequently; consult official sources for
+                    accuracy. We are not affiliated with any government agency.</em></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Visa Application Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDisclaimer() {
+            const disclaimer = document.getElementById('disclaimer');
+            if (disclaimer.classList.contains('hidden')) {
+                disclaimer.classList.remove('hidden');
+            } else {
+                disclaimer.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>

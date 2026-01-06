@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Visa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .back-button {
+            background-color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Apply for Visa</h1>
+        <p>Fill out the form below to start your visa application process. Note: This is a simulated form for
+            demonstration. For real applications, use official government websites.</p>
+    </header>
+
+    <button class="back-button" onclick="window.location.href='visa-guide.html'">Back to Guide</button>
+
+    <form action="confirmation.html" method="post">
+        <label for="visa-type">Visa Type:</label>
+        <select id="visa-type" name="visa-type" required>
+            <option value="">Select Visa Type</option>
+            <option value="tourist">Tourist/Visitor Visa</option>
+            <option value="business">Business Visa</option>
+            <option value="student">Student Visa</option>
+            <option value="work">Work Visa</option>
+            <option value="immigrant">Immigrant Visa</option>
+            <option value="transit">Transit Visa</option>
+        </select>
+
+        <label for="destination">Destination Country:</label>
+        <select id="destination" name="destination" required>
+            <option value="">Select Country</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="schengen">Schengen Countries</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="passport-number">Passport Number:</label>
+        <input type="text" id="passport-number" name="passport-number" required>
+
+        <label for="purpose">Purpose of Travel:</label>
+        <textarea id="purpose" name="purpose" rows="4" required></textarea>
+
+        <label for="travel-dates">Planned Travel Dates:</label>
+        <input type="date" id="travel-dates" name="travel-dates" required>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2026 Visa Application Hub. All rights reserved. <em>This is not a real application form.</em></p>
+    </footer>
+</body>
+
+</html>

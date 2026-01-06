@@ -1,0 +1,92 @@
+<!-- Updated confirmation.html with link to payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Submitted</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f7fa;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #28a745;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .next-button {
+            background-color: #28a745;
+        }
+
+        .next-button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Application Submitted Successfully!</h1>
+        <p>Thank you for submitting your visa application. We have received your details and will process them shortly.
+        </p>
+        <p><strong>Application ID:</strong> VISA-2023-12345 (Simulated)</p>
+        <p><strong>Next Steps:</strong></p>
+        <ul style="text-align: left; display: inline-block;">
+            <li>Check your email for confirmation and further instructions.</li>
+            <li>Processing time varies by visa type and country (typically 1-12 weeks).</li>
+            <li>Track your application status using the ID above on our portal.</li>
+            <li>If required, attend your visa interview at the embassy.</li>
+        </ul>
+        <p>For any questions, contact us at <a
+                href="mailto:support@visaapplicationhub.com">support@visaapplicationhub.com</a>.</p>
+        <button class="next-button" onclick="window.location.href='payment.html'">Proceed to Payment</button>
+        <button onclick="window.location.href='apply.html'">Apply Again</button>
+        <button onclick="window.location.href='visa-guide.html'">Back to Guide</button>
+    </div>
+    <footer>
+        <p>&copy; 2026 Visa Application Hub. All rights reserved. <em>This is a simulated confirmation page.</em></p>
+    </footer>
+</body>
+
+</html>

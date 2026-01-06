@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Visa Application</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tracking-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .status-display {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .back-button {
+            background-color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+
+        .schedule-button {
+            background-color: #ffc107;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .schedule-button:hover {
+            background-color: #e0a800;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 20px;
+            background-color: #28a745;
+            border-radius: 5px;
+            width: 60%;
+            /* Simulated progress */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Track Your Visa Application</h1>
+        <p>Enter your Application ID to check the status and progress of your visa application.</p>
+    </header>
+
+    <button class="back-button" onclick="window.location.href='payment.html'">Back to Payment</button>
+
+    <div class="tracking-form">
+        <form id="track-form">
+            <label for="app-id">Application ID:</label>
+            <input type="text" id="app-id" name="app-id" placeholder="e.g., VISA-2023-12345" required>
+            <button type="button" onclick="showStatus()">Track Status</button>
+        </form>
+    </div>
+
+    <div class="status-display" id="status-display">
+        <h2>Application Status</h2>
+        <p><strong>Application ID:</strong> VISA-2023-12345</p>
+        <p><strong>Status:</strong> Under Review</p>
+        <p><strong>Submitted:</strong> October 1, 2023</p>
+        <p><strong>Estimated Processing Time:</strong> 4-6 weeks</p>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <p>Progress: 60% (Documents Verified, Awaiting Interview)</p>
+        <p><strong>Next Steps:</strong> Schedule your visa interview at the embassy. Check email for updates.</p>
+        <p>For support, contact <a href="mailto:support@visaapplicationhub.com">support@visaapplicationhub.com</a>.</p>
+        <button class="schedule-button" onclick="window.location.href='interview.html'">Schedule Interview</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Visa Application Hub. All rights reserved. <em>This is a simulated tracking page.</em></p>
+    </footer>
+
+    <script>
+        function showStatus() {
+            const appId = document.getElementById('app-id').value;
+            if (appId === 'VISA-2023-12345') {
+                document.getElementById('status-display').style.display = 'block';
+            } else {
+                alert('Invalid Application ID. Please try again.');
+            }
+        }
+    </script>
+</body>
+
+</html>
